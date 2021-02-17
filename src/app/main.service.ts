@@ -12,4 +12,8 @@ export class MainService {
   getJobBoards(): Observable<any> {
     return this.http.get("http://localhost:8080/api/jobBoards");
   }
+
+  getJobsByJobSource(jobBoard: string): Observable<any> {
+    return this.http.get("http://localhost:8080/api/jobs/"+jobBoard);
+  }
 }

@@ -8,10 +8,10 @@ import { JobBoardsListComponent } from './job-boards-list/job-boards-list.compon
 import { JobBoardComponent } from './job-board/job-board.component';
 
 @NgModule({
-  declarations: [		
+  declarations: [
     AppComponent,
       JobBoardsListComponent,
-      JobBoardComponent
+      JobBoardComponent,
    ],
   imports: [
     BrowserModule,

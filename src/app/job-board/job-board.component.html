@@ -1,3 +1,15 @@
-<p>
-  job-board works!
-</p>
+<h3>Job Source: {{ jobBoard }}</h3>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Company Name</th>
+    <th>Job Title</th>
+    <th>Job URL</th>
+  </tr>
+  <tr *ngFor="let job of jobs">
+    <td>{{ job.id }}</td>
+    <td>{{ job.companyName }}</td>
+    <td>{{ job.jobTitle }}</td>
+    <td><a [href]="job.jobUrl">{{ job.jobUrl }}</a></td>
+  </tr>
+</table>

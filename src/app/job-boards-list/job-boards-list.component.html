@@ -1,10 +1,24 @@
 <h1>Job Sources</h1>
 <div class="cards-list">
   <a class="card" *ngFor="let jobBoard of jobBoards" [routerLink]="'/jobBoards/'+jobBoard.name">
-    <img class="logo" [src]="jobBoard.logo_file" alt="temp" width="70" height="70">
+    <img class="logo" [src]="jobBoard.logo_file" alt="image" width="70" height="70">
     <div class="right-side">
-      <p class="rating">{{ jobBoard.rating}}</p>
+      <p class="rating">{{ jobBoard.rating }}</p>
       <p class="description">{{ jobBoard.description }}</p>
+    </div>
+  </a>
+  <a class="card" [routerLink]="'/jobBoards/Company Website'">
+    <img class="logo" src="/assets/search_logo.jpg" alt="image" width="70" height="70">
+    <div class="right-side">
+      <p class="rating">N/A</p>
+      <p class="description">Apply to companies directly on their company website</p>
+    </div>
+  </a>
+  <a class="card" [routerLink]="'/jobBoards/Unkown'">
+    <img class="logo" src="/assets/question_logo.png" alt="image" width="70" height="70">
+    <div class="right-side">
+      <p class="rating">N/A</p>
+      <p class="description">Unknown Job Sources</p>
     </div>
   </a>
 </div>

@@ -49,9 +49,20 @@
   font-size: smaller;
   margin: 12px 0 0 0;
   align-self: flex-end;
-  color: green;
 }
 
 .right-side > .description {
   margin: 8px 0 20px;
+}
+
+.great {
+  color: green;
+}
+
+.good {
+  color: orange;
+}
+
+.okay {
+  color: red;
 }

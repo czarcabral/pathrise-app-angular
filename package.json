@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "heroku-postbuild": "ng build --prod",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "heroku-postbuild": "ng build --prod"
+    "e2e": "ng e2e"
   },
   "engines": {
     "node": "10.23.1",
@@ -30,6 +30,7 @@
     "@angular/router": "^6.1.0",
     "@schematics/angular": "^9.1.0",
     "core-js": "^2.5.4",
+    "express": "^4.17.1",
     "jquery": "^3.5.1",
     "lodash": "^4.17.20",
     "rxjs": "6.0.0",

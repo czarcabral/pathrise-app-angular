@@ -6,11 +6,6 @@
   align-content: flex-start;
 }
 
-.cards-list > a {
-  text-decoration: none;
-  color: inherit;
-}
-
 .card {
   /* Add shadows to create the "card" effect */
   margin: 10px 14px;
@@ -33,7 +28,6 @@
 /* On mouse-over, add a deeper shadow */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  cursor: pointer;
 }
 
 /* Add some padding inside the card container */

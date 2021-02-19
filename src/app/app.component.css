@@ -1,0 +1,36 @@
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 3px solid gray;
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+
+.header {
+  font-size: 50px;
+  /* height: 50px; */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: #544c4a;
+}
+
+.header > h1 {
+  margin: 0;
+}

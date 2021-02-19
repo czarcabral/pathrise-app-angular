@@ -3,8 +3,15 @@ body {
   background:#f4f5f6;
   font-family:Calibri;
   padding: 20px 60px;
+  margin:0;
 }
 
 h1 {
   font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }

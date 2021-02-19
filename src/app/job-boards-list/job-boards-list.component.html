@@ -1,5 +1,8 @@
 <h1>Job Sources</h1>
 <div class="cards-list">
+  <div class="card loading-container" *ngIf="loading">
+    <div class="loading"></div>
+  </div>
   <a class="card" *ngFor="let jobBoard of jobBoards" [routerLink]="'/jobBoards/'+jobBoard.name">
     <img class="logo" [src]="jobBoard.logo_file" alt="image" width="70" height="70">
     <div class="right-side">

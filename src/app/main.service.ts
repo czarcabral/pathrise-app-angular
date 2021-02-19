@@ -10,10 +10,12 @@ export class MainService {
   constructor(private http: HttpClient) { }
 
   getJobBoards(): Observable<any> {
-    return this.http.get("http://localhost:8080/api/jobBoards");
+    return this.http.get("https://cabral-pathrise-app-java.herokuapp.com/api/jobBoards");
   }
 
   getJobsByJobSource(jobBoard: string): Observable<any> {
-    return this.http.get("http://localhost:8080/api/jobs/"+jobBoard);
+    return this.http.get("https://cabral-pathrise-app-java.herokuapp.com/api/jobs/"+jobBoard);
   }
 }
+
+// return this.http.get("http://cabral-pathrise-app-java.herokuapp.com/api/jobs/" + jobBoard);
